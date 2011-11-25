@@ -11,8 +11,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        workbench.cpp
+        workbench.cpp \
+    inputwindow.cpp
 
-HEADERS  += workbench.h
+HEADERS  += workbench.h \
+    inputwindow.h
 
 FORMS    += workbench.ui
+
+

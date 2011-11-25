@@ -3,8 +3,11 @@
 
 #include <QMainWindow>
 
+
+
 namespace Ui {
     class WorkBench;
+    class CInputWindow;
 }
 
 class WorkBench : public QMainWindow
@@ -16,7 +19,12 @@ public:
     ~WorkBench();
 
 private:
+    void    SetupDockWidgets();
+    void    SetupInputWindow();
+
+private:
     Ui::WorkBench *ui;
+    Ui::CInputWindow    *p_inputWindow;
 };
 
 #endif // WORKBENCH_H
