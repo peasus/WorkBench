@@ -1,11 +1,14 @@
 #include "inputwindow.h"
+#include "ui_inputwindow.h"
 
-namespace Ui
+InputWindow::InputWindow(QWidget *parent, Qt::WindowFlags flags)
+    : QDockWidget(parent, flags),
+    ui(new Ui::inputwindow)
 {
-
-CInputWindow::CInputWindow()
-{
+    ui->setupUi(this);
 }
 
-
-} // namespace Ui
+InputWindow::~InputWindow()
+{
+    delete ui;
+}

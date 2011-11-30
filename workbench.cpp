@@ -7,7 +7,6 @@ WorkBench::WorkBench(QWidget *parent) :
     ui(new Ui::WorkBench)
 {
     ui->setupUi(this);
-    SetupDockWidgets();
 }
 
 WorkBench::~WorkBench()
@@ -15,13 +14,6 @@ WorkBench::~WorkBench()
     delete ui;
 }
 
-void WorkBench::SetupDockWidgets()
-{
-    SetupInputWindow();
-}
-
 void    WorkBench::SetupInputWindow()
 {
-    p_inputWindow = new Ui::CInputWindow();
-    addDockWidget( Qt::AllDockWidgetAreas, p_inputWindow, Qt::Horizontal );
 }

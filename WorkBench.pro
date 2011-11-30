@@ -12,11 +12,19 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         workbench.cpp \
-    inputwindow.cpp
+    inputwindow.cpp \
+    menupane.cpp
 
 HEADERS  += workbench.h \
-    inputwindow.h
+    inputwindow.h \
+    menupane.h
 
-FORMS    += workbench.ui
+FORMS    += workbench.ui \
+    inputwindow.ui \
+    menupane.ui
+
+
+
+
 
 
